@@ -52,14 +52,14 @@ class Person {
      if(this.stomach.length < 10)
      this.stomach.push(food);
    }
-  }
+
 poop(){
   this.stomach.length = 0;
 }
 toString(name, age){
   return `${this.name} , ${this.age}`;
 }
-
+}
 const Sofia = new Person(`Sofia`, 28)
 
 console.log(Sofia.age);
