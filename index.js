@@ -54,9 +54,9 @@ class Person {
    }
 
 poop(){
-  this.stomach.length = 0;
+  this.stomach.length = [];
 }
-toString(name, age){
+toString(){
   return `${this.name} , ${this.age}`;
 }
 }
@@ -127,7 +127,7 @@ class Lambdasian {
   speak(){
     return `Hello my name is ${this.name}, I am from ${this.location}.`
   }
-};
+}
 
 
 /*
@@ -164,7 +164,7 @@ gradeUpdate(){
     Student.grade -=20;
   }
 }
-};
+}
 /*
   TASK 5
     - Write a Student class extending Lambdasian.
@@ -219,9 +219,9 @@ class Student extends Lambdasian{
         + `standUp` a method that takes in a slack channel and returns `{name} announces to {channel}, @channel standy times!`
         + `debugsCode` a method that takes in a student object and a subject and returns `{name} debugs {student.name}'s code on {subject}`
 */
-class ProjectManager {
+class ProjectManager extends Instructor {
    constructor(attributes){
-     super(attributes);
+     super(attributes)
        this.gradClassName =attributes.gradClassName
        this.favInstructor = attributes.favInstructor
      }
